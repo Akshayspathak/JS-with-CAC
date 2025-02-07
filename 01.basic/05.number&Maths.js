@@ -50,7 +50,7 @@ const hundreds = 100000
 
 const min = 100
 const max = 200
-console.log(Math.floor((Math.random() * (max - min + 1)) + min)) // Min && Max value
+// console.log(Math.floor((Math.random() * (max - min + 1)) + min)) // Min && Max value
 
 
 
@@ -60,4 +60,4 @@ console.log(Math.floor((Math.random() * (max - min + 1)) + min)) // Min && Max v
 
 let min1 = 1000
 let max2 = 5000
-console.log(Math.floor((Math.random()*(max2 - min1 + 1)) + min1));
+// console.log(Math.floor((Math.random()*(max2 - min1 + 1)) + min1));
