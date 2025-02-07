@@ -60,4 +60,4 @@ const max = 200
 
 let min1 = 1000
 let max2 = 5000
-// console.log(Math.floor((Math.random()*(max2 - min1 + 1)) + min1));
+console.log(Math.floor((Math.random()*(max2 - min1 + 1)) + min1));
