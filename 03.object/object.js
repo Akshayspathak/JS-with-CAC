@@ -35,3 +35,11 @@ Jsuser.greeting2 = function(){
 }
 console.log(Jsuser.greeting());
 console.log(Jsuser.greeting2());
+
+
+Jsuser.get = function(){
+    console.log(`this is the part of Day ${this.lastDay}`);
+    
+}
+console.log(Jsuser.get());
+
