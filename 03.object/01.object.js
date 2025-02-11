@@ -33,12 +33,15 @@ const obj6 = {5:"F", 6:"G"}
 
 
 const obj3 = Object.assign({},obj1,obj2,obj6)
+const obj7 = {...obj1,...obj2,...obj6}
+console.log(obj7);
+
 // console.log(obj3);
 
 
-console.log(appUser);
+// console.log(appUser);
 
-console.log(Object.keys(appUser));
-console.log(Object.values(appUser));
-console.log(Object.entries(appUser));
+// console.log(Object.keys(appUser));
+// console.log(Object.values(appUser));
+// console.log(Object.entries(appUser));
 

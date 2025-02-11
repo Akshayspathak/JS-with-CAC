@@ -41,4 +41,10 @@ obj1 = {name: "Ak", lastName: "pa"}
 obj2 = {age: "22", Id:"01"}
 
 obj3 = {...obj1, ...obj2}
-console.log(obj3);
+// console.log(obj3);
+
+console.log(Object.keys(obj3));
+console.log(Object.values(obj3));
+console.log(Object.entries(obj3));
+
+
