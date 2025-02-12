@@ -45,4 +45,56 @@
 
 
 
+// const course = {
+//     coursename: " JS ",
+//     price: "999",
+//     courseInstructor: "Akshay"
+// }
 
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+// const {price} = course
+// console.log(price);
+// console.log(courseInstructor);
+// console.log(price);
+
+
+
+const obj = {
+    account:"Akshay",
+    accountid:121212123,
+    accountPass: "YourName",
+    userEmail: "Akshay@google.com"
+}
+
+const {account} = obj
+console.log(account);
+
+const{accountid} = obj
+console.log(accountid);
+console.log(accountid);
+console.log(accountid);
+console.log(accountid);
+console.log(obj.userEmail);
+
+
+
+// JSON Format API
+// object format
+
+{
+    "name" : "AKSHAY",
+    "price" : "free",
+    "class" : "Online"
+
+}
+
+// JSON Format
+//  Array format 
+[
+    {},
+    {},
+    {},
+]
