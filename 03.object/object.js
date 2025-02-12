@@ -60,7 +60,7 @@
 // console.log(courseInstructor);
 // console.log(price);
 
-
+// de-Stucture
 
 const obj = {
     account:"Akshay",
@@ -68,6 +68,7 @@ const obj = {
     accountPass: "YourName",
     userEmail: "Akshay@google.com"
 }
+
 
 const {account} = obj
 console.log(account);
