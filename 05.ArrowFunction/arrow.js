@@ -111,3 +111,15 @@ console.log(addTwoNumber2(2,2));
 const user1 = (username) => ({name:"Aaku"})
 console.log(user1());
 
+const account = (id) => ({id:"1212123"})
+console.log(account());
+
+const accountEmail = (userEmail) => ({ email:"Hc@google.com"})
+console.log(accountEmail());
+
+const accountpassword = (password) => ({password:"userName"})
+console.log(accountpassword());
+
+const Branch = (SBI) => ({SBI: "Abad"})
+console.log(Branch());
+
