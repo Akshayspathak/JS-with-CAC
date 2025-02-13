@@ -123,3 +123,7 @@ console.log(accountpassword());
 const Branch = (SBI) => ({SBI: "Abad"})
 console.log(Branch());
 
+
+let AddThreeNum = (num1,num2,num3) => (num1 + num2 + num3)
+console.log(AddThreeNum(1,2,3));
+
