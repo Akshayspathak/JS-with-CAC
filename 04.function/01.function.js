@@ -93,20 +93,64 @@
 
 
 
-function fbUser(userName) {
-    if (userName === undefined) {
-        console.log("Enter your a userName");
-        return    
-    }
+// function fbUser(userName) {
+//     if (userName === undefined) {
+//         console.log("Enter your a userName");
+//         return    
+//     }
 
-    return `${userName} just LoggedIn Now`
+//     return `${userName} just LoggedIn Now`
     
-}
+// }
 
 
-console.log(fbUser(4));
+// console.log(fbUser(4));
 
 
 
 
+// function addName(userName) {
+//     return `${userName} just join Now`
+    
+    
+// }
+
+// console.log(addName("Akshay"));
+
+
+// function loginUser(username) {
+//     return `${username} just logged in`
+    
+// }
+
+// console.log( loginUser("AKSHAY EKATTA"));
+
+
+
+
+// function calculateCartPrice(...num1) {
+//     return num1
+
+// }
+// console.log(calculateCartPrice(2,3,4,5,400)
+// );
+
+
+// const user = {
+//     userName: "Akshay",
+//     price: 999
+// }
+// function handleObject(anyobject) {
+//     console.log(`user name is ${anyobject.userName} & Price is ${anyobject.price}}`);
+    
+// }
+// handleObject(user)
+
+
+// const myArr = [200,300,400,500,100]
+
+// function returnValue(getArray) {
+//     return getArray[1]
+// }
+// console.log(returnValue(myArr));
 
