@@ -11,11 +11,11 @@
 // }
 
 
-   const score = 200
-   if (score < 100 ) {
-    let power = "fly"
-    console.log(`User power: ${power}`);
-   }else{
-    console.log(`user score is greter than 200`);
+   // const score = 200
+   // if (score < 100 ) {
+   //  let power = "fly"
+   //  console.log(`User power: ${power}`);
+   // }else{
+   //  console.log(`user score is greter than 200`);
     
-   }
+   // }
