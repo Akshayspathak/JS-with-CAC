@@ -1,15 +1,9 @@
 import { useState } from "react"
-
-
 function Click() {
-
 const [buttonColor,setButtonColor] = useState("")
-
 const handleButtonClick = (color) => {
   setButtonColor(color)
 }
-
-
   return (
     <div className="Click">
 
@@ -25,5 +19,4 @@ const handleButtonClick = (color) => {
     </div>
   )
 }
-
 export default Click
