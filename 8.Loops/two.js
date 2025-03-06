@@ -60,13 +60,52 @@ let array = ['java','javaScript','react']
 // odd Number
 for (let i = 0; i <= 100; i++) {
    if (i % 2 == 1) {
-    console.log(i);
+   //  console.log(i);
    }
 }
 
 // Even Number
 for (let i = 0; i <= 100; i++) {
     if (i % 2 == 0) {
-     console.log(i);
+   //   console.log(i);
     }
  }  
+
+let i = 0
+ while (i<=10) {
+   // console.log('This is i is ${i}');
+   i = i + 2
+   
+ }
+
+ let index = 1
+ while (index <= 10) {
+   // console.log(`This is value of index ${index}`);
+   index = index + 2 
+ }
+
+
+ let myArr = ['adi','piya', 'motya']
+ let arr = 0
+ while (arr < myArr.length ) {
+   // console.log('This is my  best ${myArr[arr]}');
+   arr = arr++
+   
+ }
+
+ let mySuperHeros = ['Aaku','Piyu','Vai','Adi']
+ let arrayset = 0
+ while (arrayset < mySuperHeros.length) {
+   console.log(`this is my SuperHeros ${mySuperHeros[arrayset]}`);
+   arrayset = arrayset + 1
+ }
+
+
+ let myArray = ['batman','superman','flash']
+
+ let arrMy = 0
+ while (arrMy < myArray.length) {
+   console.log(`value is ${myArray[arrMy]}`);
+   
+   
+ }
