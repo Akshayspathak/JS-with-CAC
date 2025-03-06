@@ -75,3 +75,13 @@ for (const [key,value] of map) {
     
 }
 
+for (const element of map) {
+    console.log(element);
+    
+    
+}
+
+for (const element2 of map) {
+    console.log(element2);
+    
+}
