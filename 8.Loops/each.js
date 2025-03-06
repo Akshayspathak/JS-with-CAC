@@ -9,12 +9,18 @@ const coding = ['js','ruby','cpp','react']
     
 // })
 
-coding.forEach( (ak) => {
-    console.log(ak);
+// coding.forEach( (ak) => {
+//     console.log(ak);
     
-}    )
+// }    )
 
-coding.forEach( (item) => {
-    console.log(item);
+// coding.forEach( (item) => {
+//     console.log(item);
+// })
+
+
+
+coding.forEach((myObj)=> {
+    console.log(myObj);
+    
 })
-
