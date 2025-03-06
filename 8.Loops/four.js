@@ -68,20 +68,29 @@ map.set('account','Id')
 map.set('accountName','Aaku')
 map.set('Bank','SBI')
 map.set('IFCECODE','SBI0075')
+map.set('Password','1212343')
 console.log(map);
 
 for (const [key,value] of map) {
     console.log(key, ":-", value);
-    
 }
 
 for (const element of map) {
     console.log(element);
-    
-    
 }
 
 for (const element2 of map) {
     console.log(element2);
+    
+}
+
+
+
+for (const element3 of map) {
+    console.log(element3);
+    
+}
+
+for (const [key,value] of map ) {
     
 }
