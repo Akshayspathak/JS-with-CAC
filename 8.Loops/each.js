@@ -24,3 +24,8 @@ coding.forEach((myObj)=> {
     console.log(myObj);
     
 })
+
+coding.forEach((item) => {
+console.log(item);
+
+})
