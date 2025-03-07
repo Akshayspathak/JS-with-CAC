@@ -48,3 +48,5 @@ const shoppingCart = [
 
 const priceCart =  shoppingCart.reduce((acc, item) => acc + item.price , 0 )
 console.log(priceCart);
+
+
