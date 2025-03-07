@@ -1,3 +1,5 @@
+// forEach & filter use
+
 // const coding = ['js','ruby','java','cpp']
 
 // const values = coding.forEach((item) => {
@@ -25,7 +27,10 @@
 
 // Ex
 
-let books = [{ title:'Book One', genre: 'History', publish:2011, edition:1989, id:1},{ title:'Book Two', genre: 'Science', publish:2005, edition:2011, id:2},{ title:'Book Three', genre: 'Math', publish:1995, edition:2022,id:2},{ title:'Book Four', genre: 'Math', publish:2016, edition:2024,id:2},]
+let books = [{ title:'Book One', genre: 'History', publish:2011, edition:1989, id:1},
+    { title:'Book Two', genre: 'Science', publish:2005, edition:2011, id:2},
+    { title:'Book Three', genre: 'Math', publish:1995, edition:2022,id:2},
+    { title:'Book Four', genre: 'Math', publish:2016, edition:2024,id:2},]
 let userBooks = books.filter((bk) => bk.genre ==='Science')
 // console.log(userBooks);
 
