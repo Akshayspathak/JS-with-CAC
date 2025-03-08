@@ -57,7 +57,8 @@ const chainingValue = myarr.filter((num)=> num >= 900).map((num)=> num *10)
 
 // reduce
 
-const myred = [1,2,3,4]
+const myred = [1,2,3,4] 
+// let value of the Array
 const myred2 = myred.reduce((acc,num)=> acc + num, 1)
 // console.log(myred2)
 
@@ -87,4 +88,6 @@ const carsBrand = [
 
 const carValue = carsBrand.reduce((acc,item)=> acc +item.car,0 )
 console.log(carValue);
+
+
 
