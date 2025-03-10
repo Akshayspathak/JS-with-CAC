@@ -87,7 +87,12 @@ const carsBrand = [
 ]
 
 const carValue = carsBrand.reduce((acc,item)=> acc +item.car,0 )
+const carValue2 = carsBrand.reduce((acc,item)=> acc +item.Brand,0 )
+
 console.log(carValue);
+console.log(carValue2);
+const carValue3 = carsBrand.reduce((acc,val)=> acc + val.car,  0  )
+console.log(carValue3);
 
 
 
