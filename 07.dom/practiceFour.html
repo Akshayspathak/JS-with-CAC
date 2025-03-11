@@ -34,7 +34,7 @@
     //Edit a new Elements
 
     const secondLang = document.querySelector('li:nth-child(2)')
-    const newli = document.createElement('li')
+    const newli = document.createElement('li') 
     newli.textContent = 'Mojo'
     secondLang.replaceWith(newli)
 
@@ -60,9 +60,17 @@ addOtimaLanguage('ms')
 addOtimaLanguage('gs')
 addOtimaLanguage('fs')
 addOtimaLanguage('ls')
+addOtimaLanguage('gs')
 
 const change = document.querySelector('li:nth-child(8)')
 change.outerHTML = '<li>yes Elements Changes</li>'
+const v2 = document.querySelector('li:nth-child(8)')
+v2.remove(v2)
+
+const m2 = document.querySelector('li:nth-child(9)')
+m2.outerHTML = '<li>ki kro </li>'
+
+
 
     </script>
 
