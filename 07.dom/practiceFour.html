@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+
+<body style="background-color: black; color: white;">
+    <ul class="addLang">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lanName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${lanName}`
+        document.querySelector('.addLang').appendChild(li)
+    }
+    addLanguage('py')
+    addLanguage('Javascript')
+    addLanguage('java')
+
+    // Add Elements Or Create elements
+
+    function addOtimaLanguage(lanName) {
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(lanName))
+        document.querySelector('.addLang').appendChild(li)
+    }
+    addOtimaLanguage('Golang')
+    addOtimaLanguage('Mau')
+
+    //Edit a new Elements
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+    secondLang.replaceWith(newli)
+
+    const replaceLang = document.querySelector('li:nth-child(1)')
+    const newRep = document.createElement('li')
+    newRep.textContent = 'Ruby'
+    replaceLang.replaceWith(newRep)
+
+    const threeLang = document.querySelector('li:nth-child(1)')
+    // threeLang.outerHTML = '<li>Typescript</li>'
+    threeLang.outerHTML = '<li>Mia</li>'
+
+    const fourlang = document.querySelector('li:last-child')
+    fourlang.remove()
+    const five = document.querySelector('li:nth-child(2)')
+    five.outerHTML = '<li>yes Bcchaaaa</li>'
+
+    const aks = document.querySelector("li:nth-child(4)")
+    aks.outerHTML = '<li>This is my Mia </li>'
+
+
+addOtimaLanguage('ms')
+addOtimaLanguage('gs')
+addOtimaLanguage('fs')
+addOtimaLanguage('ls')
+
+const change = document.querySelector('li:nth-child(8)')
+change.outerHTML = '<li>yes Elements Changes</li>'
+
+    </script>
+
+</html>
