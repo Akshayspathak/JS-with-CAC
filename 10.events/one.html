@@ -10,7 +10,7 @@
 
     <h1>Amazing Image Test</h1>
     <div>
-        <ul class="images" id="img">
+        <ul  id="img">
             <li>
                 <img width="200" id="photoshop2"
                     src="https://images.pexels.com/photos/29421577/pexels-photo-29421577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -51,12 +51,14 @@
 
 //     })
 
-document.getElementById('images').addEventListener('click', function(e){
+    document.getElementById('img').addEventListener('click', function(e){
         console.log("clicked inside the ul");
     }, false)
 
     document.getElementById('photoshop2').addEventListener('click', function(e){
-        console.log("Image clicked");
+        console.log("owl clicked");
+        // e.stopPropagation()
     }, false)
+   
 </script>
 </html>
