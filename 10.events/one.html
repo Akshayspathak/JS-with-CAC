@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+
+    <h1>Amazing Image Test</h1>
+    <div>
+        <ul class="images" id="img">
+            <li>
+                <img width="200" id="photoshop2"
+                    src="https://images.pexels.com/photos/29421577/pexels-photo-29421577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="">
+            </li>
+            <li>
+                <img width="200" id="photoshop"
+                    src=https://images.pexels.com/photos/29421579/pexels-photo-29421579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+                    alt="">
+            </li>
+            <li>
+                <img width="200" id="photoshop"
+                    src=https://images.pexels.com/photos/18148937/pexels-photo-18148937/free-photo-of-vintage-tram-on-a-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+                    alt="">
+            </li>
+            <li>
+                <img width="200" id="photoshop"
+                    src=https://images.pexels.com/photos/18107024/pexels-photo-18107024/free-photo-of-an-old-city-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+                    alt="">
+            </li>
+            <li>
+                <img width="200" id="photoshop"
+                    src=https://images.pexels.com/photos/3532560/pexels-photo-3532560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+                    alt="">
+            </li>
+            <li><a style="color: aquamarine;" href="https://www.google.co.in/" id="google"> google.in</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+//  document.querySelectorAll('#photoshop').forEach(element => {
+//     element.addEventListener('click', () => {
+//         console.log('clicked inside the ul');
+//     });
+// });
+//     document.getElementById('photoshop2').addEventListener("click",  () => {
+//         console.log('Image 1 Clicked');
+
+//     })
+
+document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, false)
+
+    document.getElementById('photoshop2').addEventListener('click', function(e){
+        console.log("Image clicked");
+    }, false)
+</script>
+</html>
