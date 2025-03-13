@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Learning with Javascript</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <div><h1>
+        Welcome To The JS
+    </h1>
+<button id="stop"> Stop</button></div>
+</body>
+<script>
+setTimeout(()=>{
+    console.log('Welcome To the Ekatta');
+},10000)
+setTimeout(()=>{
+    console.log('Learning With Javascript with Ankitji');
+},15000)
+setTimeout(()=>{
+    console.log('Next To the React JS');
+},20000)
+
+
+// const sayAkshay  = function () {
+// console.log('Mia');
+// }
+
+const changeText =  function () {
+    document.querySelector('h1').innerHTML = 'Best Javascript'
+    
+}
+const changeMe =  setTimeout(changeText , 3000)
+document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeMe)
+    console.log('Stop Here');
+    
+})
+</script>
+</html>
