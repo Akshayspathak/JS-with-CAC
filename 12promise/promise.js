@@ -89,27 +89,52 @@
 
 // Task
 
-const myNewValue = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        console.log('This is the new Account');
+// const myNewValue = new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         console.log('This is the new Account');
         
-        resolve({user:'mia',age:22})
-    },2000)
-})
-myNewValue.then(function(l){
-    console.log(l);
+//         resolve({user:'mia',age:22})
+//     },2000)
+// })
+// myNewValue.then(function(l){
+//     console.log(l);
     
-})
+// })
 
 // Task 
-const myNewName = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        console.log('My New Name is');
-        resolve({nickName:"Aaku",age: 28})
-    },5000)
+// const myNewName = new Promise(function(resolve, reject){
+//     setTimeout(function(){
+//         console.log('My New Name is');
+//         resolve({nickName:"Aaku",age: 28})
+//     },5000)
+// })
+
+// myNewName.then(function(data){
+//     console.log(data);
+    
+// })
+
+
+// Task
+
+const promiseFour = new Promise(function(resolve, reject){
+    setTimeout(()=>{
+        let error = true
+        if (!error) {
+            resolve({userName: 'Akshay', age:22})
+        } else {
+            reject('error Something went wrong')
+        }
+    },3000)
 })
 
-myNewName.then(function(data){
-    console.log(data);
-    
-})
+promiseFour.then((user)=>{
+    console.log(user);
+    // return user.userName
+    return user.age
+}).then((userName)=>{
+   console.log(userName);
+}).catch((error)=> {
+console.log(error);
+}).finally(() => console.log('finally promises is done')
+)
