@@ -143,30 +143,30 @@
 // task
 
 
-const myPromiseFive = new Promise(function(resolve, reject){
-    setTimeout(()=>{
-        let error = false
-        if (!error) {
-            resolve({userName: 'Akshay', sol:'Mia'})
-        } else {  
-            reject('Error: something error')
-        }
-    },2000)
-})
+// const myPromiseFive = new Promise(function(resolve, reject){
+//     setTimeout(()=>{
+//         let error = false
+//         if (!error) {
+//             resolve({userName: 'Akshay', sol:'Mia'})
+//         } else {  
+//             reject('Error: something error')
+//         }
+//     },2000)
+// })
 
 
-async  function consumePromiseFive() {
-    try {
-        const respone = await myPromiseFive
-        console.log(respone);
-    } catch (error) {
-        console.log(error);
+// async  function consumePromiseFive() {
+//     try {
+//         const respone = await myPromiseFive
+//         console.log(respone);
+//     } catch (error) {
+//         console.log(error);
         
         
-    }
-}
+//     }
+// }
 
-consumePromiseFive()
+// consumePromiseFive()
 
 //************************* try catch using ******************************/
 
@@ -187,26 +187,42 @@ consumePromiseFive()
 /////////////////////// .then .catch using ////////////////////////////////////////
 
 
-fetch ('https://jsonplaceholder.typicode.com/users')
-.then((respose)=> {
-    return respose.json()
-})
-.then((data)=>{
-    console.log(data);
+// fetch ('https://jsonplaceholder.typicode.com/users')
+// .then((respose)=> {
+//     return respose.json()
+// })
+// .then((data)=>{
+//     console.log(data);
     
-})
-.catch((error)=> {
-    console.log('error');
-})
+// })
+// .catch((error)=> {
+//     console.log('error');
+// })
 
-
+// Task
 fetch('https://api.github.com/users/akshaypathak')
 .then((respose) =>{
     return respose.json()
 })
-.then((data)=>{
+.then((data)=>{ 
     console.log(data);
 })
 .catch((error) =>{
     console.log(error);
 })
+
+
+//Task
+fetch('https://dog.ceo/api/breeds/image/random')
+.then((data) => {
+    return data.json()
+})
+.then((data) => {
+    console.log(data);    
+})
+.catch((error) => {
+    console.log(error);
+    
+})
+ 
+
