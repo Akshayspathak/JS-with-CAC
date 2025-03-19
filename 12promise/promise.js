@@ -117,24 +117,96 @@
 
 // Task
 
-const promiseFour = new Promise(function(resolve, reject){
+// const promiseFour = new Promise(function(resolve, reject){
+//     setTimeout(()=>{
+//         let error = true
+//         if (!error) {
+//             resolve({userName: 'Akshay', age:22})
+//         } else {
+//             reject('error Something went wrong')
+//         }
+//     },3000)
+// })
+
+// promiseFour.then((user)=>{
+//     console.log(user);
+//     // return user.userName
+//     return user.age
+// }).then((userName)=>{
+//    console.log(userName);
+// }).catch((error)=> {
+// console.log(error);
+// }).finally(() => console.log('finally promises is done')
+// )
+
+
+// task
+
+
+const myPromiseFive = new Promise(function(resolve, reject){
     setTimeout(()=>{
-        let error = true
+        let error = false
         if (!error) {
-            resolve({userName: 'Akshay', age:22})
-        } else {
-            reject('error Something went wrong')
+            resolve({userName: 'Akshay', sol:'Mia'})
+        } else {  
+            reject('Error: something error')
         }
-    },3000)
+    },2000)
 })
 
-promiseFour.then((user)=>{
-    console.log(user);
-    // return user.userName
-    return user.age
-}).then((userName)=>{
-   console.log(userName);
-}).catch((error)=> {
-console.log(error);
-}).finally(() => console.log('finally promises is done')
-)
+
+async  function consumePromiseFive() {
+    try {
+        const respone = await myPromiseFive
+        console.log(respone);
+    } catch (error) {
+        console.log(error);
+        
+        
+    }
+}
+
+consumePromiseFive()
+
+//************************* try catch using ******************************/
+
+// async function getAllUser() {
+//  try {
+//     const respose = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data = await respose.json()
+//     console.log(data);
+    
+//  } catch (error) {
+//     console.log('E: error');
+    
+    
+//  }
+// }
+// getAllUser()
+
+/////////////////////// .then .catch using ////////////////////////////////////////
+
+
+fetch ('https://jsonplaceholder.typicode.com/users')
+.then((respose)=> {
+    return respose.json()
+})
+.then((data)=>{
+    console.log(data);
+    
+})
+.catch((error)=> {
+    console.log('error');
+})
+
+
+fetch('https://api.github.com/users/akshaypathak')
+.then((respose) =>{
+    return respose.json()
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((error) =>{
+    console.log(error);
+})
