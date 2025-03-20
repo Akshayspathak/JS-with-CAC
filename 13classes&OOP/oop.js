@@ -34,3 +34,4 @@ function isLoggedIn(userName, password) {
 
 const loggedIn = new isLoggedIn("Simak", "Aksim");
 console.log(loggedIn);
+console.log(loggedIn);
