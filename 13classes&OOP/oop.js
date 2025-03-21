@@ -35,10 +35,16 @@ function isLoggedIn(userName, password) {
 const loggedIn = new isLoggedIn("Simak", "Aksim");
 console.log(loggedIn);
 console.log(loggedIn);
+
 function amount(profit, loss) {
   this.profit = profit;
   this.loss = loss;
 }
-
 const valueAmount = new amount("2000", "3000");
 console.log(valueAmount);
+
+const value3 = new isLoggedIn("aksim", "simak");
+console.log(value3);
+
+const issignIn = new amount("value", "setValue");
+console.log(issignIn);
